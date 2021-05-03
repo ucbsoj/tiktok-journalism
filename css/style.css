@@ -3,6 +3,12 @@
 
 html,body{
   overflow-x: hidden;
+  background-image: url('../assets/chalk-background.jpg');
+  background-repeat: repeat;
+  
+  /*  Comment out the next line for tiled version */
+  background-size: cover;
+  color:white;
 }
 
 
@@ -49,9 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero video{
   position: absolute;
-  top:50%;
+  top:0;
   left:50%;
-  transform:translate(-50%,-50%);
+  transform:translate(-50%,0);
   height: 100vh;
   width: auto;
   z-index: 1 !important;
@@ -90,10 +96,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+/*
 .bg-semidark{
   background-color: rgba(0,0,0,0.9);
   padding: 1.2em 4em;
 }
+*/
 
 /* helper */
 .vh-200{ height: 200vh;}
@@ -132,6 +140,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  background: white;
+}
 
 section[role="main"]{
   background: white;
