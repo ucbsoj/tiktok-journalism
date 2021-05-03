@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, serif;
 }
 
+.container{
+  min-height: 100vh;
+}
+
 
 /* CSS for hero image, either background photo or background video */
 .hero{
@@ -29,10 +33,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .hero header{
-  background-color:rgba(0,0,0,0.75);
+  background-color:rgba(0,0,0,0.95);
 }
 .hero h1{
   font-family: 'Limelight', Helvetica, Arial, sans-serif;
+  font-size: 10vw;
 }
 .hero p{
   font-family: Lato, sans-serif;
@@ -58,8 +63,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.hero header{
+  position: relative;
+}
+
+.hero header:after{
+  content:"Scroll Down";
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  bottom: 15px;
+  left: 50%;
+  width:120px;
+  height:100px;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.7);  
+  background-image: url(../assets/scroll-down.png);
+  background-position: center;
+  background-size: 40px 50px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
 .bg-semidark{
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.9);
   padding: 1.2em 4em;
 }
 
